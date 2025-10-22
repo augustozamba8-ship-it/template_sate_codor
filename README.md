@@ -28,7 +28,7 @@
 		textarea {
 			width: 100%;
 			height: 100px;
-			margin-bottom: 20px;
+			margin-bottom: 2lpx;
 			padding: 10px;
 			border: 1px solid #ccc;
 		}
