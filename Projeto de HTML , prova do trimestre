@@ -1,0 +1,118 @@
+here<!DOCTYPE html>
+<html>
+<head>
+  <title>Escola</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Escola</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cadastro-alunos.html">Cadastrar Alunos</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2>Bem-vindo à nossa escola!</h2>
+    <p>Alunos cadastrados: <span id="alunos-cadastrados">0</span></p>
+    <p>Alunos não cadastrados: <span id="alunos-nao-cadastrados">0</span></p>
+    <h3>Alunos Cadastrados:</h3>
+    <ul id="lista-alunos-cadastrados"></ul>
+    <h3>Alunos Não Cadastrados:</h3>
+    <ul id="lista-alunos-nao-cadastrados"></ul>
+  </main>
+
+  <script>
+    let alunosCadastrados = [];
+    let alunosNaoCadastrados = [];
+
+    function atualizarDados() {
+      document.getElementById('alunos-cadastrados').innerText = alunosCadastrados.length;
+      document.getElementById('alunos-nao-cadastrados').innerText = alunosNaoCadastrados.length;
+      document.getElementById('lista-alunos-cadastrados').innerHTML = alunosCadastrados.map(aluno => `<li>${aluno.nome} - ${aluno.idade} anos</li>`).join('');
+      document.getElementById('lista-alunos-nao-cadastrados').innerHTML = alunosNaoCadastrados.map(aluno => `<li>${aluno.nome} - ${aluno.idade} anos</li>`).join('');
+    }
+
+    // Simulação de dados
+    alunosCadastrados = [
+      { nome: 'João', idade: 15 },
+      { nome: 'Maria', idade: 16 }
+    ];
+    alunosNaoCadastrados = [
+      { nome: 'Pedro', idade: 17 },
+      { nome: 'Ana', idade: 18 }
+    ];
+    atualizarDados();
+  </script>
+</body>
+</html>
+
+<table border="1">
+  <tr>
+    <th>Nome</th>
+    <th>Idade</th>
+    <th>Cidade</th>
+  </tr>
+  <tr>
+    <td>Augusto</td>
+    <td>25</td>
+    <td>São Paulo</td>
+  </tr>
+  <tr>
+    <td>Zamba</td>
+    <td>20</td>
+    <td>Rio de Janeiro</td>
+  </tr>
+</table>
+<form action="" method="post">
+  <label for="nome">Nome:</label>
+  <input type="text" id="nome" name="nome"><br><br>
+
+  <label for="sobrenome">Sobrenome:</label>
+  <input type="text" id="sobrenome" name="sobrenome"><br><br>
+
+  <label for="email">E-mail:</label>
+  <input type="email" id="email" name="email"><br><br>
+
+  <label for="senha">Senha:</label>
+  <input type="password" id="senha" name="senha"><br><br>
+
+  <label for="genero">Gênero:</label>
+  <select id="genero" name="genero">
+    <option value="masculino">Masculino</option>
+    <option value="feminino">Feminino</option>
+    <option value="outro">Outro</option>
+  </select><br><br>
+
+  <label for="termos">Aceito os termos e condições:</label>
+  <input type="checkbox" id="termos" name="termos"><br><br>
+
+  <input type="submit" value="Enviar">
+</form>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Projeto Multimídia</title>
+</head>
+<body>
+  <h1>Projeto Multimídia</h1>
+
+  <h2>Áudio:</h2>
+  <audio controls>
+    <source src=AUD-20251123-WA0051".mp3" type="audio/mp3">
+  </audio>
+
+  <h2>Vídeo:</h2>
+  <video width="230" height="230" controls>
+    <source src="VID_20251121_194230.mp4" type="video/00:30mp4">
+  </video>
+
+  <h2>Foto:</h2>
+  <img src="+244 926 542 005 20250925_224315(0)/+244 926 542 005 20250925_224315(0)" alt="minha foto" width="200">
+
+</body>
+</html>
+
+
