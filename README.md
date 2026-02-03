@@ -1,4 +1,4 @@
-um<!DOCTYPE html>
+umum<!DOCTYPE html>
 <html>
 <head>
 	<title>Formulário Acadêmico e Dados Pessoais</title>
@@ -221,6 +221,130 @@ um<!DOCTYPE html>
   <h2>Foto:</h2>
   <img src="+244 926 542 005 20250925_224315(0)/+244 926 542 005 20250925_224315(0)" alt="minha foto" width="200">
 
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Curso de CSS - Augusto Zamba</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #444;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    section {
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Curso de CSS</h1>
+    <p>Criado por: Augusto Zamba</p>
+  </header>
+  <nav>
+    <a href="                                           
+    <a href="#segundo-trimestre">Segundo Trimestre</a>
+    <a href="                                           
+    <a href="#fim">Fim</a>
+  </nav>
+  <section id="primeiro-trimestre">
+    <h2>Primeiro Trimestre</h2>
+    <ul>
+      <li><a href="                    
+      <li><a href="#t1">T1: Introdução ao CSS</a></li>
+      <li><a href="                  
+      <li><a href="#t3">T3: </a></li>
+      <li><a href="                  
+      <li><a href="#t5">T5: </a></li>
+    </ul>
+  </section>
+  <section id="segundo-trimestre">
+    <h2>Segundo Trimestre</h2>
+    <ul>
+      <li><a href="                              
+      <li><a href="#tarefa">Tarefa</a></li>
+      <li><a href="                                 
+      <li><a href="#tabela">Tabela</a></li>
+      <li><a href="                        
+      <li><a href="#audio">Áudio</a></li>
+      <li><a href="                       
+    </ul>
+    <h3 id="bem-vindo">Bem-vindo</h3>
+    <p>Bem-vindo ao segundo trimestre do curso de CSS!</p>
+    <h3 id="tarefa">Tarefa</h3>
+    <p>Criar um formulário de contato</p>
+    <h3 id="formulario">Formulário</h3>
+    <form>
+      <label>Nome:</label>
+      <input type="text" name="nome"><br><br>
+      <label>Email:</label>
+      <input type="email" name="email"><br><br>
+      <label>Mensagem:</label>
+      <textarea name="mensagem"></textarea><br><br>
+      <input type="submit" value="Enviar">
+    </form>
+    <h3 id="tabela">Tabela</h3>
+    <table border="1">
+      <tr>
+        <th>Nome</th>
+        <th>Email</th>
+      </tr>
+      <tr>
+        <td>João</td>
+        <td>joao@example.com</td>
+      </tr>
+      <tr>
+        <td>Maria</td>
+        <td>maria@example.com</td>
+      </tr>
+    </table>
+    <h3 id="imagem">Imagem</h3>
+    <img src="imagem.jpg" alt="Imagem">
+    <h3 id="audio">Áudio</h3>
+    <audio controls>
+      <source src="audio.mp3" type="audio/mp3">
+    </audio>
+    <h3 id="video">Vídeo</h3>
+    <video controls>
+      <source src="video.mp4" type="video/mp4">
+    </video>
+  </section>
+  <section id="terceiro-trimestre">
+    <h2>Terceiro Trimestre</h2>
+    <ul>
+      <li><a href="#importancia-css">A importância do CSS no desenho web</a></li>
+      <li><a href="                                                     
+      <li><a href="#t2-terceiro">T2: Criar um menu de navegação</a></li>
+      <li><a href="                                                        
+      <li><a href="#t4-terceiro">T4: Criar um slider de imagens</a></li>
+      <li><a href="#t4-terceiro">T4:formatacao_css_073447.html</a></li>
+      <li><a href="#t4-terceiro">T4:formulario</a></li>                                                     
+    </ul>
+  </section>
+  <section id="fim">
+    <h2>Fim</h2>
+    <ul>
+      <li><a href="#tipos-folhas-estilo">Tipos de folhas de estilos: online, externo, interno</a></li>
+    </ul>
+  </section>
 </body>
 </html>
 
