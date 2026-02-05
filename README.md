@@ -1,3 +1,47 @@
+<form>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Olho de Deus</title>
+  <style>
+    body {font-family: Arial;}
+    input {margin: 5px;}
+  </style>
+</head>
+<body>
+  <h1>Olho de Deus</h1>
+  <input id="nome" placeholder="Nome">
+  <input id="local" placeholder="Local">
+  <input id="contato" placeholder="Contato">
+  <button onclick="addPessoa()">Add Pessoa</button>
+  <button onclick="verInfo()">Ver Info</button>
+  <div id="output"></div>
+
+  <script>
+    let pessoas = JSON.parse(localStorage.getItem('pessoas')) || {};
+    function addPessoa() {
+      let nome = document.getElementById("nome").value;
+      pessoas[nome] = {
+        local: document.getElementById("local").value,
+        contato: document.getElementById("contato").value,
+        atividades: []
+      };
+      localStorage.setItem('pessoas', JSON.stringify(pessoas));
+      document.getElementById("output").innerText = nome + " adicionada!";
+    }
+    function verInfo() {
+      let nome = document.getElementById("nome").value;
+      let p = pessoas[nome];
+      if (p) {
+        document.getElementById("output").innerText = 
+          `Local: ${p.local} | Contato: ${p.contato} | Atividades: ${p.atividades}`;
+      } else {
+        document.getElementById("output").innerText = "Não encontrado.";
+      }
+    }
+  </script>
+</body>
+</html>
 umum<!DOCTYPE html>
 <html>
 <head>
